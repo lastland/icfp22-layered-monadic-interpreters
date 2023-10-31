@@ -89,4 +89,3 @@ $(COQMAKEFILE): $(COQ_PROJ) $(VS)
 
 %: $(COQMAKEFILE) force
 	@$(MAKE) -f $(COQMAKEFILE) $@
-force $(COQ_PROJ) $(VS): ;

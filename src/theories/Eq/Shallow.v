@@ -100,7 +100,7 @@ End observing_relations.
 
 (** ** Unfolding lemmas for [bind] *)
 
-Instance observing_bind {E R S} :
+#[global] Instance observing_bind {E R S} :
   Proper (observing eq ==> eq ==> observing eq) (@ITree.bind E R S).
 Proof.
   repeat intro; subst. constructor. unfold observe. cbn.

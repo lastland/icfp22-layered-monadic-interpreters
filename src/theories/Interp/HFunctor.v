@@ -575,7 +575,7 @@ Section HFunctorInstances.
         rewrite bind_tau.
         gstep; constructor.
         ITree.fold_subst.
-        auto with paco.
+        eauto with paco.
   Qed.
 
   Lemma stateT_morph_bind:
